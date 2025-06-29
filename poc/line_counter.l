@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
     yyin = fp;      // Use file as input
     yylex();        // Run the lexer
 
-    printf("Total number of lines: %d\n", count);
+    printf("Total number of lines: %d\n", count+1);
 
     fclose(fp);
     return 0;
