@@ -1,0 +1,58 @@
+ Case Study on Fuzzy Logic and Its Operators
+✨ Introduction
+Fuzzy Logic is a way of making decisions more like humans do. Unlike regular logic that only uses 0 or 1 (true or false), fuzzy logic can take values between 0 and 1. This helps machines understand real-world situations where things aren't just black or white, but somewhere in between.
+
+For example, instead of saying "the room is hot" or "the room is cold", fuzzy logic can say "the room is somewhat warm".
+
+🌡️ Real-Life Example: Smart Fan
+Let’s take an example of a smart fan. We want the fan to adjust its speed based on:
+
+Temperature (cold, warm, hot)
+
+Humidity (dry, normal, humid)
+
+Instead of fixed rules, fuzzy logic allows smooth transitions.
+
+⚙️ Fuzzy Operators
+In fuzzy logic, we use three main operators:
+
+AND (Minimum)
+
+Takes the lowest value between two inputs
+
+Example: If temp is 0.6 and humidity is 0.8, then
+AND = min(0.6, 0.8) = 0.6
+
+OR (Maximum)
+
+Takes the highest value between two inputs
+
+Example: If temp is 0.6 and humidity is 0.8, then
+OR = max(0.6, 0.8) = 0.8
+
+NOT (Complement)
+
+Reverses the value
+
+Example: If dryness = 0.3, then
+NOT dryness = 1 - 0.3 = 0.7
+
+🧠 Sample Rule
+Let’s say we have a rule:
+
+IF temperature is hot AND humidity is humid, THEN fan speed is high
+
+If:
+
+Temperature is 0.7 (hot)
+
+Humidity is 0.5 (humid)
+
+Then:
+
+Rule strength = min(0.7, 0.5) = 0.5
+
+So, the fan will run at 50% power
+
+✅ Conclusion
+Fuzzy logic is useful when we need machines to make decisions in a human-like way. It works well in systems where values are not just true or false but lie somewhere in between. By using simple operators like AND, OR, and NOT, fuzzy logic helps build smart devices like air conditioners, fans, and even washing machines.
