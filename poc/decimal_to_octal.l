@@ -17,7 +17,7 @@ DECIMAL     [0-9]+
 %%
 
 int main() {
-    printf("Enter decimal numbers (Ctrl+D or Ctrl+Z to end):\n");
+    printf("Enter decimal numbers (Ctrl+C to end):\n");
     yylex();
     return 0;
 }
